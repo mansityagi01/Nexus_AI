@@ -1,11 +1,11 @@
-# Core web framework and real-time communication
+# Core web framework
 Flask==3.0.0
 Flask-SocketIO==5.3.6
 python-socketio==5.10.0
 
 # AI and agent framework
 google-generativeai==0.3.2
-strands-agents==0.1.0
+strands-agents==1.13.0
 
 # Model Context Protocol
 mcp==1.18.0
@@ -13,18 +13,33 @@ mcp==1.18.0
 # Environment and configuration
 python-dotenv==1.0.0
 
-# HTTP client for API calls
+# HTTP client
 requests==2.31.0
-
-# Async support
-asyncio==3.4.3
 
 # JSON handling
 jsonschema==4.20.0
 
-# Logging and utilities
+# Logging
 colorlog==6.8.0
 
-# Development and testing (optional)
-pytest==7.4.3
-pytest-asyncio==0.21.1
+# Production server for Render
+gunicorn==21.2.0
+
+# Required dependencies for MCP and strands-agents
+boto3==1.40.57
+botocore==1.40.57
+anyio>=4.5
+httpx>=0.27.1
+httpx-sse>=0.4
+pydantic>=2.11.0
+pydantic-settings>=2.5.2
+python-multipart>=0.0.9
+sse-starlette>=1.6.1
+starlette>=0.27
+uvicorn>=0.31.1
+opentelemetry-api>=1.30.0
+opentelemetry-sdk>=1.30.0
+opentelemetry-instrumentation>=0.59b0
+opentelemetry-instrumentation-threading>=0.51b0
+opentelemetry-semantic-conventions>=0.59b0
+typing-extensions>=4.13.2

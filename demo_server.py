@@ -407,9 +407,33 @@ DEMO_HTML = """
         
         function isSecurityTicket(subject) {
             const securityKeywords = [
-                'suspicious', 'phishing', 'malware', 'virus', 'hack', 'breach',
-                'security', 'threat', 'spam', 'scam', 'fraud', 'unauthorized',
-                'malicious', 'attack', 'fake', 'spoofed', 'ceo', 'wire transfer'
+                // Phishing & Scams
+                'suspicious', 'phishing', 'scam', 'fraud', 'fake', 'spoofed',
+                'won', 'congratulations', 'winner', 'prize', 'lottery', 'jackpot',
+                'money', 'cash', 'reward', 'refund', 'payment', 'transfer', 'wire',
+                '$', 'dollar', 'euro', 'pound',
+                
+                // Urgency & Social Engineering  
+                'urgent', 'immediate', 'expires', 'limited time', 'act now', 'hurry',
+                'click here', 'verify', 'confirm', 'update', 'suspended', 'locked',
+                'notification', 'alert', 'warning', 'notice',
+                
+                // Fake Authorities
+                'ceo', 'manager', 'director', 'boss', 'executive', 'president',
+                'bank', 'irs', 'government', 'police', 'legal', 'microsoft', 'google',
+                
+                // Malware & Threats
+                'malware', 'virus', 'trojan', 'ransomware', 'infected', 'attachment',
+                'download', 'install', 'hack', 'breach', 'unauthorized', 'compromised',
+                'attack', 'threat', 'malicious', 'dangerous', 'harmful',
+                
+                // Credential Theft
+                'login', 'password', 'account', 'security', 'verification', 'credentials',
+                
+                // Suspicious Indicators
+                'unusual', 'strange', 'weird', 'odd', 'unknown', 'www.', 'http', 
+                '.com', 'link', 'url', 'site', 'bitcoin', 'crypto', 'investment',
+                'free', 'gift', 'bonus', 'discount', 'offer', 'deal'
             ];
             
             const lowerSubject = subject.toLowerCase();
