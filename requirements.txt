@@ -42,4 +42,8 @@ opentelemetry-sdk>=1.30.0
 opentelemetry-instrumentation>=0.59b0
 opentelemetry-instrumentation-threading>=0.51b0
 opentelemetry-semantic-conventions>=0.59b0
+<<<<<<< HEAD
 typing-extensions>=4.13.2
+=======
+typing-extensions>=4.13.2
+>>>>>>> 33e8cd7b51f44e7472892634edca01bf369a082b
