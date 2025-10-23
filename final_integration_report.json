@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-10-23 14:05:59",
+  "test_results": {
+    "Application Startup": false,
+    "Web Interface": false,
+    "API Endpoints": false,
+    "WebSocket Connectivity": false,
+    "Demo Ticket Creation": true
+  },
+  "summary": {
+    "passed": 1,
+    "total": 5,
+    "success_rate": 0.2,
+    "overall_status": "NEEDS ATTENTION",
+    "ready_for_demo": false
+  }
+}

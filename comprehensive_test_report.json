@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-10-23 14:02:19",
+  "test_results": {
+    "Frontend Build": true,
+    "Backend Imports": false,
+    "Workflow Simulation": true,
+    "MCP Tools Simulation": true,
+    "UI Data Structure": true,
+    "Performance Metrics": true,
+    "Error Handling": true,
+    "Demonstration Scenarios": true
+  },
+  "detailed_results": {
+    "frontend_build": true,
+    "backend_imports": {
+      "backend.web.main": false,
+      "backend.web.routes": false,
+      "backend.workflow.ticket_processor": false,
+      "backend.agents.master_agent": false,
+      "backend.agents.phishguard_agent": false
+    },
+    "workflow_simulation": true,
+    "mcp_tools": {
+      "analyze_email_for_iocs": true,
+      "block_malicious_url": true,
+      "search_and_destroy_email": true
+    },
+    "ui_data_structure": true,
+    "performance": {
+      "response_time": 0.05032825469970703,
+      "memory_usage": 53.9,
+      "acceptable": true
+    },
+    "error_handling": true,
+    "demonstration_scenarios": true
+  },
+  "summary": {
+    "passed": 7,
+    "total": 8,
+    "success_rate": 0.875,
+    "overall_status": "NEEDS ATTENTION"
+  }
+}
